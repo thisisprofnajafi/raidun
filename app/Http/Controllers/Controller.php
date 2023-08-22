@@ -119,12 +119,11 @@ class Controller extends BaseController
     {
 
 
-        if (session()->get('locale') != null){
+        if (session()->get('locale')){
             if (session()->get('locale') == 'en'){
                 App::setLocale('ar');
                 session()->put('locale', 'ar');
-            }
-            if (session()->get('locale') == 'ar'){
+            }else{
                 App::setLocale('en');
                 session()->put('locale', 'en');
             }
