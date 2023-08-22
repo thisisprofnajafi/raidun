@@ -53,7 +53,7 @@
 
     <!-- Hero Start -->
     <section id="home" class="ms-hero margin-b-50">
-        <a class="language" style="position: fixed;top: 60px; left: 50px;font-family: 'Poppins, sans-serif'; color: #222;font-size: 1.25rem;font-weight: 500" href="{{route('language change')}}">{{ session()->get('locale') == 'en' ? 'EN': 'AR' }}</a>
+        <a class="language" style="position: absolute;top: 60px; left: 50px;font-family: 'Poppins, sans-serif'; color: #222;font-size: 1.25rem;font-weight: 500" href="{{route('language change')}}">{{ session()->get('locale') == 'en' ? 'EN': 'AR' }}</a>
 
         <div class="ms-diamond-1"></div>
         <div class="ms-diamond-2"></div>

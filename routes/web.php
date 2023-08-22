@@ -46,6 +46,5 @@ Route::group(['middleware' => 'auth', 'prefix' => 'dashboard'], function () {
         Route::post('/edit/{id}', [ImageController::class, 'edit'])->name('edit work images');
     });
 
-
 });
 

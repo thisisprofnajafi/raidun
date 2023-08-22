@@ -119,22 +119,21 @@ class Controller extends BaseController
     {
 
 
-        if (session()->get('locale')){
+        if (session()->get('locale') != null){
             if (session()->get('locale') == 'en'){
                 App::setLocale('ar');
                 session()->put('locale', 'ar');
             }
             if (session()->get('locale') == 'ar'){
                 App::setLocale('en');
-                session()->put('locale', 'ar');
+                session()->put('locale', 'en');
             }
 
             return back();
         }else{
                 App::setLocale('ar');
                 session()->put('locale', 'ar');
-            return redirect(route('front-landing'));
-
+            return back();
         }
     }
 }
